@@ -1,7 +1,11 @@
 function showMessage(response) {
   
   if (response === "No1") {
-      window.close();
+    document.getElementById("errorMessage").style.display = "block";
+    document.getElementById("no-button1").remove();
+    document.getElementById("yesButton").remove();
+    document.getElementById("q1img").remove();
+    document.getElementById("name").remove();
   }
 }
 
@@ -84,13 +88,14 @@ function moveNoButton() {
   const container = document.querySelector(".container");
   const maxWidth = window.innerWidth - noButton.offsetWidth;
   const maxHeight = window.innerHeight - noButton.offsetHeight;
+  yesButton.style.position = "absolute";
 
   // Set button position to absolute
   noButton.style.position = "absolute";
 
 
   // Change image source to "bonk.gif"
-  document.getElementById("bonk").style.display = "block";
+  // document.getElementById("bonk").style.display = "block";
 
   // Generate random coordinates within the visible container
   const randomX = Math.max(0, Math.floor(Math.random() * maxWidth));
@@ -101,7 +106,7 @@ function moveNoButton() {
   noButton.style.top = randomY + "px";
   console.log(noButton.style.left )
 
-  document.getElementById("q2").style.display = "none";
+  // document.getElementById("q2").style.display = "none";
   document.getElementById("moveAwayButton").style.display = "block";
 
 }

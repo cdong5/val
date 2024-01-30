@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     background: url('images/background1.jpg') repeat;
-    animation: slideBackground 10s linear infinite; /* Adjust the duration as needed */
+    /* animation: slideBackground 10s linear infinite; Adjust the duration as needed */
     font-size: 35px;
     color: rgb(255, 0, 174);
 }
@@ -92,7 +92,7 @@ body
     100% { transform: translate(0, 0); }
 }
 
-@keyframes slideBackground {
+/* @keyframes slideBackground {
     from {
         background-position: 0 0;
     }
@@ -100,7 +100,7 @@ body
     to {
         background-position: 100% 0;
     }
-}
+} */
 
 #moveAwayButton {
     position: relative;
