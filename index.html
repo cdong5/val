@@ -5,25 +5,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Valentine's Proposal</title>
+    <title>To Becca Boo</title>
 </head>
 
 <body>
     <div class="container">
         <div class="Mainprompt">
-            <img class="image" src="images/catflower.jpg"></img>
-            <h1 class="hh" id="name">Hey test!</h1>
-            <p class="pp" id="question">Will you be my Valentine?</p>
+            <div><img class="image" id="q1img" src="images/q1.gif"></img></div>
+            <h1 class="hh" id="name">Hello, are you my girlfriend?</h1>
+            <!-- <p class="pp" id="question">Will you be my Valentine?</p> -->
             <div class="buttons">
-                <button id="no-button" onclick="showMessage('No')">No</button>
-                <button onclick="showMessage('Yes')" id="yesButton">Yes</button>
+                <button id="no-button1" onclick="showMessage('No1')">No</button>
+                <button onclick="showPasswordInput()" id="yesButton">Yes</button>
             </div>
-            <div class="hidden-message" id="no-message">
-                <p>Nice try, but you can't escape that easily!</p>
+
+            <!-- <button onclick="showPasswordInput()">Enter Password</button> -->
+            <div id="passwordInputContainer">
+                <div> <img src="images/q3.gif" alt="Celebration Image"></div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Type your password here">
+                <button onclick="checkPassword()">Submit</button>
+                <button onclick="showHint()">Get Hint</button>
+
             </div>
-            <div class="hidden-message" id="yes-message">
-                <p>YAY! See you on the 14th, babygirl.</p>
+            
+
+            <div id="errorMessage">
+                <h1>THOT BEGONE</h1>
+                <img src="images/q5.gif" alt="Error Image">
             </div>
+
+            <div id="hintMessage">
+                <p>Where were we in this photo? </p>
+                <img src="images/q6.jpg" alt="Hint Image" width="370" height="350">
+            </div>
+
+            <div id="bonk">
+                <img id="bonk1" src="images/bonk.gif" alt="bonk Image" width="370" height="300">
+            </div>
+            
+
+            <div id="q2">
+                <img src="images/q6.gif" alt="question Image" width="370" height="300">
+            </div>
+
+            <div class="buttons" id="valentineResponse">
+                <p> hello Sunshine princess best girlfriend in the world </p>
+                <h1>Will you be my valentine?</h1>
+                <div> 
+                    <button id="noButton" onclick="handleValentineResponse(false)">No</button>
+                    <button id="yesButton" onclick="handleValentineResponse(true)">Yes</button>
+                </div>
+                
+            </div>
+
+            <div id="celebration">
+                <button id="moveAwayButton" onmouseover="moveToRandomPosition()">Click to Change your Mind</button>
+                
+
+                <img src="images/q4.gif" alt="Celebration Image">
+                <h1>Yay, see you on Feb 14th ^_^</h1>
+
+            </div>                
+
+
+        
         </div>
     </div>
     <script src="script.js"></script>

@@ -42,6 +42,12 @@ body
     
 }
 
+/* Initially hide the password input */
+#passwordInputContainer, #hintMessage, #valentineResponse, #celebration, #errorMessage, #bonk, #q2 {
+    display: none;
+}
+  
+
 .buttons button {
     background-color: #ff4d79;
     color: #fff;
@@ -67,9 +73,6 @@ body
     flex-direction: row;
 }
 
-#no-button{
-    
-}
 
 .hidden-message {
     display: none;
@@ -86,4 +89,27 @@ body
     50% { transform: translate(-20px, -20px); }
     75% { transform: translate(10px, 10px); }
     100% { transform: translate(0, 0); }
+}
+
+#moveAwayButton {
+    position: relative;
+    padding: 10px;
+    background-color: #ff4d79;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.07s ease-in-out; /* Add a smooth transition effect */
+    display: none;
+    font-family: 'Lobster', cursive;
+    font-size: 15px;
+    left: 40%;
+    right: 50%;
+}
+
+#celebration {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
