@@ -101,7 +101,7 @@ function moveNoButton() {
   noButton.style.top = randomY + "px";
   console.log(noButton.style.left )
 
-  document.getElementById("q2").remove();
+  document.getElementById("q2").style.display = "none";
   document.getElementById("moveAwayButton").style.display = "block";
 
 }
