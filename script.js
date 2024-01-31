@@ -31,7 +31,7 @@ function checkPassword() {
 
   // Add your logic to check the password
   // For example, you might want to compare it with a predefined password
-  if (passwordInput === "peepeepoopoo" || passwordInput === "peepeepoopoo") {
+  if (passwordInput === "barrie" || passwordInput === "Barrie") {
       showValentineResponse();
   } else {
       incorrectAttempts++;
